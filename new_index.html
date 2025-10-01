@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio website</title>
+    <link rel="stylesheet" href="new_style.css">
+</head>
+<body>
+
+    <nav> 
+        <section>
+            <h1>My Portfolio</h1>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </section>
+    </nav>
+
+    <section id="home">
+        <h2>Welcome to My Portfolio</h2>
+        <p>I am Soham, a passionate web developer building web pages.</p>
+        <img src="profile.jpg" alt="Profile Picture">
+        <button onclick="scrollToSection('about')">Learn More About Me</button>
+    </section>
+    
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am a web developer with experience in HTML, CSS, and JavaScript. I love creating beautiful and functional websites.</p>
+        <p>In my free time, I enjoy playing sports and exploring new technologies!</p>
+        <button onclick="scrollToSection('projects')">View My Projects</button>
+    </section>
+
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="project">
+            <h3>Project 1: Portfolio Website</h3>
+            <p>A personal portfolio website to showcase my skills and projects.</p>
+            <a href="new_index.html">View Project</a>
+        </div>
+        <div class="project">
+            <h3>Project 2:</h3>
+            <p>Stay tuned!</p>
+              
+        </div>
+        <div class="project">
+            <h3>Project 3:</h3>
+            <p>Stay tuned!</p>
+            
+        </div>
+        <button onclick="scrollToSection('contact')">Contact Me</button>
+    </section>
+
+    <section id="contact">
+        <h2>Get in Touch</h2>
+        <form id="contactForm">
+            <input type="text" id="name" name="name" placeholder="Your Name" required>  
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+            <textarea id="message" name="message" placeholder="Your message" required></textarea>
+            <button type="submit">Send your message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy;&lt;&lt;Soham Bhattacherjee&gt;&gt;</p>
+    </footer>
+
+    <script src="new_main.js"></script>
+    
+</body>
+</html>
